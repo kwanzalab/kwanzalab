@@ -25,10 +25,10 @@ export const hero = {
 };
 
 export const about = {
-  eyebrow: "About Campus Lab",
+  eyebrow: "About Kwanza Green Campus",
   title: "A student movement, rooted on campus.",
   story: [
-    "Campus Lab was launched in 2024 in Goma, in the Democratic Republic of Congo, by young people who believed their own campuses could be the first place climate action becomes a habit.",
+    "Kwanza Green Campus was launched in 2024 in Goma, in the Democratic Republic of Congo, by young people who believed their own campuses could be the first place climate action becomes a habit.",
     "What began on a single campus is built around a simple idea: when students learn about the environment and then act on it together — planting trees, reducing waste, caring for shared spaces — the change lasts.",
   ],
   mission: {
@@ -113,7 +113,7 @@ export const initiatives: Initiative[] = [
 export const expansion = {
   eyebrow: "Our next ambition",
   title: "From One Campus to a Network of Greener Schools.",
-  text: "Campus Lab began on a single campus. Our ambition is to turn what we learn into a model that other schools, universities and youth communities across the DRC can adopt, adapt and lead themselves.",
+  text: "Kwanza Green Campus began on a single campus. Our ambition is to turn what we learn into a model that other schools, universities and youth communities across the DRC can adopt, adapt and lead themselves.",
   steps: [
     {
       title: "Prove the model",
@@ -125,10 +125,10 @@ export const expansion = {
     },
     {
       title: "Grow the network",
-      text: "Support new campuses and youth groups to launch their own Campus Lab chapters.",
+      text: "Support new campuses and youth groups to launch their own Kwanza Green Campus chapters.",
     },
   ],
-  cta: { label: "Partner With Campus Lab", href: "#get-involved" },
+  cta: { label: "Partner With Kwanza Green Campus", href: "#get-involved" },
   partners: [
     { label: "Schools and universities", icon: School },
     { label: "Youth organisations", icon: Users },
@@ -151,7 +151,7 @@ export const involvement: {
   {
     kind: "ambassador",
     title: "Become a Campus Ambassador",
-    text: "Lead Campus Lab activities at your school or university and represent the movement.",
+    text: "Lead Kwanza Green Campus activities at your school or university and represent the movement.",
     icon: Megaphone,
     cta: "Apply as ambassador",
   },
@@ -172,7 +172,7 @@ export const involvement: {
   {
     kind: "support",
     title: "Support an Environmental Initiative",
-    text: "Help fund or resource a specific Campus Lab activity. Tell us how you would like to contribute.",
+    text: "Help fund or resource a specific Kwanza Green Campus activity. Tell us how you would like to contribute.",
     icon: Building2,
     cta: "Offer support",
   },

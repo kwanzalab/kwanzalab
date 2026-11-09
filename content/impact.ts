@@ -25,7 +25,7 @@ export const impactMeta = {
     "We track our results openly. Figures marked as placeholders will be replaced with verified numbers as soon as they are confirmed.",
   /** Shown above the dashboard while any metric is unverified. */
   placeholderNotice:
-    "Placeholder figures — illustrative only, pending verified data from Campus Lab.",
+    "Placeholder figures — illustrative only, pending verified data from Kwanza Green Campus.",
   asOf: "Update this line with the reporting period, e.g. “January–June 2025”.",
 };
 

@@ -88,7 +88,7 @@ export function Hero() {
               <Leaf size={22} aria-hidden />
             </span>
             <span>
-              <span className="font-display block text-sm font-bold text-deep">A KwanzaLabs initiative</span>
+              <span className="font-display block text-sm font-bold text-deep">A KwanzaLabs project</span>
               <span className="block text-xs text-ink-soft">Student-led · Goma, DRC</span>
             </span>
           </motion.div>

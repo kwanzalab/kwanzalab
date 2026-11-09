@@ -4,7 +4,7 @@ import { site } from "@/content/site";
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: `${site.name} — by ${site.parent}`,
-    short_name: site.name,
+    short_name: "Green Campus",
     description: site.description,
     id: "/",
     start_url: "/",

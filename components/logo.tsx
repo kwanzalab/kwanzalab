@@ -16,8 +16,8 @@ export function Logo({ light, className }: { light?: boolean; className?: string
     <span className={cn("inline-flex items-center gap-3", className)}>
       <LogoMark />
       <span className="flex flex-col leading-none">
-        <span className={cn("font-display text-[1.1875rem] font-extrabold", light ? "text-white" : "text-deep")}>
-          Campus Lab
+        <span className={cn("font-display whitespace-nowrap text-[1.1rem] font-extrabold", light ? "text-white" : "text-deep")}>
+          Kwanza Green Campus
         </span>
         <span
           className={cn(

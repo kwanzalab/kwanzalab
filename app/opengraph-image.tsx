@@ -28,7 +28,7 @@ export default function OG() {
             <path d="M20 25.6c0-4.7-3.1-7.3-8.4-7.3 0 4.7 2.9 7.3 8.4 7.3Z" fill="#DCFCE7" />
           </svg>
           <div style={{ display: "flex", flexDirection: "column" }}>
-            <span style={{ fontSize: 40, fontWeight: 800 }}>Campus Lab</span>
+            <span style={{ fontSize: 40, fontWeight: 800 }}>Kwanza Green Campus</span>
             <span style={{ fontSize: 20, letterSpacing: 4, color: "#86efac" }}>BY KWANZALABS</span>
           </div>
         </div>

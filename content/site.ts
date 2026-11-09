@@ -3,20 +3,22 @@
  * Contact details and delivery are driven by environment variables (see README).
  */
 
-const placeholderEmail = "contact@campuslab.example";
+const defaultEmail = "pcassinga@gmail.com";
 
 export const site = {
-  name: "Campus Lab",
+  name: "Kwanza Green Campus",
   parent: "KwanzaLabs",
   tagline: "Growing Greener Campuses. Empowering the Next Generation.",
   description:
-    "Campus Lab is a youth-led environmental initiative by KwanzaLabs, launched in 2024 in Goma, DR Congo, empowering students to take practical climate action on their campuses.",
+    "Kwanza Green Campus is a youth-led environmental initiative by KwanzaLabs, launched in 2024 in Goma, DR Congo, empowering students to take practical climate action on their campuses.",
   founded: 2024,
   location: "Goma, North Kivu, Democratic Republic of Congo",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
-  /** Public contact email. Set NEXT_PUBLIC_CONTACT_EMAIL to replace the placeholder. */
-  email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || placeholderEmail,
-  emailConfigured: Boolean(process.env.NEXT_PUBLIC_CONTACT_EMAIL),
+  /** Public contact email. Override with NEXT_PUBLIC_CONTACT_EMAIL (e.g. once a team address exists). */
+  email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || defaultEmail,
+  emailConfigured: true,
+  phone: { display: "+243 993 267 007", href: "tel:+243993267007" },
+  whatsapp: { display: "+250 791 240 041", href: "https://wa.me/250791240041" },
   /** Optional form endpoint (e.g. Formspree). When set, forms POST JSON here. */
   formEndpoint: process.env.NEXT_PUBLIC_FORM_ENDPOINT || "",
   /** Leave `href` empty until the account exists — the link renders as "coming soon". */

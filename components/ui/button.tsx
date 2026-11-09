@@ -13,7 +13,7 @@ const variants: Record<Variant, string> = {
 };
 
 const base =
-  "inline-flex min-h-11 items-center justify-center gap-2 rounded-full px-6 text-[0.9375rem] font-semibold transition-all duration-200 active:scale-[0.98] disabled:pointer-events-none disabled:opacity-60";
+  "inline-flex min-h-11 whitespace-nowrap items-center justify-center gap-2 rounded-full px-6 text-[0.9375rem] font-semibold transition-all duration-200 active:scale-[0.98] disabled:pointer-events-none disabled:opacity-60";
 
 type Shared = { variant?: Variant; className?: string; children: React.ReactNode };
 type AnchorProps = Shared & { href: string } & Omit<React.ComponentProps<"a">, "href" | "className" | "children">;

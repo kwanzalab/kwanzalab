@@ -73,7 +73,7 @@ export async function deliver(kind: FormKind, data: Record<string, string>): Pro
   }
 
   if (site.emailConfigured) {
-    const subject = `[Campus Lab] ${kind} — ${data.name}`;
+    const subject = `[Kwanza Green Campus] ${kind} — ${data.name}`;
     const body = Object.entries(data)
       .filter(([, v]) => v)
       .map(([k, v]) => `${k}: ${v}`)

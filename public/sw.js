@@ -1,5 +1,5 @@
-/* Campus Lab service worker: offline-friendly, conservative caching. */
-const VERSION = "campus-lab-v1";
+/* Kwanza Green Campus service worker: offline-friendly, conservative caching. */
+const VERSION = "kwanza-green-campus-v1";
 const SHELL = ["/"];
 
 self.addEventListener("install", (event) => {

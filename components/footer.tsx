@@ -8,7 +8,7 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-[1.4fr_1fr_1fr]">
           <div>
             <Logo light />
-            <p className="mt-6 text-sm text-mint/70">A KwanzaLabs initiative.</p>
+            <p className="mt-6 text-sm text-mint/70">A KwanzaLabs project.</p>
             <p className="font-display mt-4 max-w-sm text-2xl font-bold leading-snug">{site.tagline}</p>
           </div>
 
@@ -29,7 +29,9 @@ export function Footer() {
             <p className="text-xs font-bold uppercase tracking-[0.18em] text-fresh">Contact</p>
             <address className="mt-5 space-y-3 not-italic text-mint/80">
               <p>{site.location}</p>
-              <p>{site.emailConfigured ? <a className="hover:text-white" href={`mailto:${site.email}`}>{site.email}</a> : `${site.email} (placeholder)`}</p>
+              <p><a className="hover:text-white" href={`mailto:${site.email}`}>{site.email}</a></p>
+              <p><a className="hover:text-white" href={site.phone.href}>{site.phone.display}</a></p>
+              <p><a className="hover:text-white" href={site.whatsapp.href} target="_blank" rel="noopener noreferrer">WhatsApp {site.whatsapp.display}</a></p>
             </address>
             <ul className="mt-5 flex flex-wrap gap-2">
               {site.socials.map((s) => (
@@ -50,7 +52,7 @@ export function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col justify-between gap-3 border-t border-white/10 pt-6 text-sm text-mint/60 sm:flex-row">
-          <p>© {site.founded} Campus Lab · A KwanzaLabs initiative. All rights reserved.</p>
+          <p>© {site.founded} Kwanza Green Campus · A KwanzaLabs project. All rights reserved.</p>
           <p>Goma, DR Congo</p>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-/** Renders the Campus Lab mark as a PNG at any size (used for app icons). */
+/** Renders the Kwanza Green Campus mark as a PNG at any size (used for app icons). */
 export function brandIcon(size: number, maskable = false) {
   const inner = maskable ? size * 0.56 : size * 0.78;
   return new ImageResponse(

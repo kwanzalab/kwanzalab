@@ -1,6 +1,6 @@
-# Campus Lab — by KwanzaLabs
+# Kwanza Green Campus — by KwanzaLabs
 
-Website and installable PWA for **Campus Lab**, a youth-led environmental initiative launched in 2024 in Goma, DR Congo.
+Website and installable PWA for **Kwanza Green Campus**, a youth-led environmental initiative launched in 2024 in Goma, DR Congo.
 Built with Next.js (App Router), TypeScript, Tailwind CSS v4, Framer Motion and Lucide icons. No backend, no paid services.
 
 ## Run it
@@ -22,14 +22,14 @@ See `.env.example`.
 | Variable | Purpose |
 | --- | --- |
 | `NEXT_PUBLIC_SITE_URL` | Canonical URL for SEO / Open Graph |
-| `NEXT_PUBLIC_CONTACT_EMAIL` | Public email; also used to deliver forms via the visitor's email app |
+| `NEXT_PUBLIC_CONTACT_EMAIL` | Optional override of the public email (default is in `content/site.ts`, along with phone and WhatsApp) |
 | `NEXT_PUBLIC_FORM_ENDPOINT` | JSON endpoint (e.g. Formspree). Forms POST here and report success only on an OK response |
 | `NEXT_PUBLIC_SOCIAL_*` | Social profile URLs. Empty = shown as "soon" |
 
 ### How forms behave
 1. `NEXT_PUBLIC_FORM_ENDPOINT` set → submitted there.
-2. Else `NEXT_PUBLIC_CONTACT_EMAIL` set → opens the visitor's email app pre-filled (they must press send; the page says so).
-3. Neither → inputs are validated, and the page states plainly that **nothing was sent or stored**.
+2. Else (the default) → opens the visitor's email app pre-filled (they must press send; the page says so).
+3. (Not applicable now that a default email is set.)
 
 Recommended next step: create a free Formspree form and set `NEXT_PUBLIC_FORM_ENDPOINT`.
 

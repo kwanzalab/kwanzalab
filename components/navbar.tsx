@@ -55,11 +55,11 @@ export function Navbar() {
       )}
     >
       <nav aria-label="Primary" className="mx-auto flex h-[4.5rem] max-w-none items-center justify-between px-5 sm:px-10 lg:px-14 2xl:px-24">
-        <a href="#home" aria-label="Campus Lab, home" onClick={() => setOpen(false)}>
+        <a href="#home" aria-label="Kwanza Green Campus, home" onClick={() => setOpen(false)}>
           <Logo />
         </a>
 
-        <ul className="hidden items-center gap-1 lg:flex">
+        <ul className="hidden items-center gap-1 xl:flex">
           {nav.map((item) => (
             <li key={item.href}>
               <a
@@ -82,7 +82,7 @@ export function Navbar() {
           </Button>
           <button
             type="button"
-            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-line bg-white text-deep lg:hidden"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-line bg-white text-deep xl:hidden"
             aria-label={open ? "Close menu" : "Open menu"}
             aria-expanded={open}
             aria-controls="mobile-menu"
@@ -101,7 +101,7 @@ export function Navbar() {
             animate={{ opacity: 1, height: "calc(100dvh - 4.5rem)" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="overflow-hidden bg-paper lg:hidden"
+            className="overflow-hidden bg-paper xl:hidden"
           >
             <ul className="mx-auto flex max-w-none flex-col gap-1 px-5 pt-4">
               {nav.map((item, i) => (

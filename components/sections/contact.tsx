@@ -1,4 +1,4 @@
-import { Handshake, Mail, MapPin } from "lucide-react";
+import { Handshake, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { site } from "@/content/site";
 import { Form, type Field } from "@/components/form";
 import { Section, Eyebrow, Heading } from "@/components/ui/section";
@@ -48,15 +48,31 @@ export function Contact() {
               </span>
               <div>
                 <p className="font-display font-bold text-deep">Email</p>
-                {site.emailConfigured ? (
-                  <a href={`mailto:${site.email}`} className="text-forest underline decoration-fresh underline-offset-4">
-                    {site.email}
-                  </a>
-                ) : (
-                  <p className="text-ink-soft">
-                    {site.email} <span className="text-xs">(placeholder — to be configured)</span>
-                  </p>
-                )}
+                <a href={`mailto:${site.email}`} className="text-forest underline decoration-fresh underline-offset-4">
+                  {site.email}
+                </a>
+              </div>
+            </li>
+            <li className="flex gap-4">
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-mint text-forest">
+                <Phone size={22} aria-hidden />
+              </span>
+              <div>
+                <p className="font-display font-bold text-deep">Phone</p>
+                <a href={site.phone.href} className="text-forest underline decoration-fresh underline-offset-4">
+                  {site.phone.display}
+                </a>
+              </div>
+            </li>
+            <li className="flex gap-4">
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-mint text-forest">
+                <MessageCircle size={22} aria-hidden />
+              </span>
+              <div>
+                <p className="font-display font-bold text-deep">WhatsApp</p>
+                <a href={site.whatsapp.href} target="_blank" rel="noopener noreferrer" className="text-forest underline decoration-fresh underline-offset-4">
+                  {site.whatsapp.display}
+                </a>
               </div>
             </li>
             <li className="flex gap-4">
@@ -71,7 +87,7 @@ export function Contact() {
           </ul>
 
           <div className="mt-10">
-            <p className="font-display mb-3 font-bold text-deep">Follow Campus Lab</p>
+            <p className="font-display mb-3 font-bold text-deep">Follow Kwanza Green Campus</p>
             <ul className="flex flex-wrap gap-2">
               {site.socials.map((s) => (
                 <li key={s.label}>

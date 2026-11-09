@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   description: site.description,
   applicationName: site.name,
-  keywords: ["Campus Lab", "KwanzaLabs", "Goma", "DR Congo", "climate action", "tree planting", "students", "sustainability", "recycling"],
+  keywords: ["Kwanza Green Campus", "KwanzaLabs", "Goma", "DR Congo", "climate action", "tree planting", "students", "sustainability", "recycling"],
   authors: [{ name: site.parent }],
   creator: site.parent,
   alternates: { canonical: "/" },

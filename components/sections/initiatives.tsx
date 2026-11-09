@@ -18,7 +18,7 @@ export function Initiatives() {
         <Eyebrow>Our initiatives</Eyebrow>
         <Heading className="text-deep">Four ways students turn care into action.</Heading>
         <p className="mt-6 text-lg leading-relaxed text-ink-soft">
-          Every Campus Lab programme is designed to be run by students, on campus, with practical results
+          Every Kwanza Green Campus programme is designed to be run by students, on campus, with practical results
           people can see.
         </p>
       </Reveal>
